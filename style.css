@@ -7,6 +7,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .con-nav {
@@ -129,13 +130,15 @@ body {
 }
 
 .card {
-
+    /* overflow: auto; */
     height: 500px;
     width: 250px;
     padding: 20px;
     margin: 51px 189px 68px 0px;
     text-align: center;
+
 }
+
 
 .card img {
     width: 200px;
@@ -150,7 +153,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 2%;
-    margin-top: 250px;
+    margin-top: 67px;
 }
 
 #skill-tit h1 {
@@ -165,6 +168,11 @@ body {
 }
 
 .conatact {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -174,15 +182,31 @@ body {
 }
 
 .contact h1 {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 10%;
     border-bottom: solid black 2px;
-    width: 202px;
-    margin-left: 26%;
+    width: 140px;
+    text-align: center;
+    /* margin-left: 6%; */
 }
 
 .conatact p {
+    margin-top: 10px;
     padding-top: 50px;
+}
+
+.contact ul {
+    background-color: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    font-size: 28px;
+    letter-spacing: 30px;
+}
+
+.conatact a {
+    padding-left: 20px;
 }
 
 form {
@@ -226,24 +250,180 @@ input[type="submit"]:hover {
 }
 
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
     .nav-links {
 
         position: absolute;
-
         z-index: 1;
-
-        top: 4rem;
-
-        background: black;
-
-        width: 94%;
-
+        top: 6rem;
+        background: white;
+        width: 70%;
         border-radius: 10px;
+        color: #fff;
 
     }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .nav-links:hover {
+        color: red;
+    }
+
+    .nav-sec {
+        width: 300px;
+    }
+
+    .about {
+        height: 750px;
+        flex-direction: column !important;
+    }
+
+    .about-1 {
+        padding: 25px 44px;
+        height: 355px;
+        order: 1;
+        width: 375px;
+        line-height: 27px;
+        font-size: 15px;
+    }
+
+    .ab-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .ab-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about .btn {
+        margin-top: 7px;
+        border-radius: 21px;
+        width: 119px;
+        font-size: 12px;
+    }
+
+    .about-content {
+        height: 600px;
+    }
+
+    .about-content .col-4 {
+        width: 54%;
+        margin-left: 55px;
+    }
+
+    .about-content img {
+        display: flex;
+        justify-content: space-around;
+        width: 141%;
+    }
+
+    .about-text {
+        padding-left: 32px;
+
+    }
+
+    .about-content h1 {
+        padding-top: 27px;
+        font-size: 23px;
+        display: flex;
+        height: 57px;
+        width: 107px;
+        border-bottom: 2px solid black;
+    }
+
+    .about-content .about-tex1 {
+        font-size: 15px;
+        font-weight: bold;
+        /* padding: 0px 0px 0px 0px; */
+        line-height: 27px;
+        padding-top: 3%;
+    }
+
+    .about-tex {
+        width: 100%;
+        padding-left: 35px;
+    }
+
+    #skill-tit h1 {
+        height: 36px;
+        width: 115px;
+        margin-top: 22%;
+        margin-left: 6%;
+    }
+
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        padding-left: 63px;
+    }
+
+    #skill-tit {
+        margin-top: 425px;
+        width: 370px;
+    }
+
+    .skill-item .card {
+        line-height: 27px;
+        /* font-weight: bold; */
+        font-size: 15px;
+        border-radius: 20px;
+        height: 490px;
+        width: 230px;
+        padding: 10px;
+        /* margin: 51px 189px 68px 0px; */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card .card-img-top {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* .card .card-img-top1 { 
+        width: 153px;
+        height: 200px;
+        padding-left: 31px;
+    } */
+
+    .skill-item .card .btn {
+        border-radius: 19px;
+        width: 116px;
+        font-size: 13px;
+    }
+
+    .skill-item .card-img-top2 {
+        width: 177px;
+        height: 200px;
+        padding-left: 27px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conatact form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding-bottom: 30px;
+    }
 }
+
 
 /* position: absolute;
     z-index: 1;
