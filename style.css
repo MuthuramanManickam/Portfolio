@@ -185,14 +185,14 @@ body {
     /* text-align: center; */
     margin-top: 10%;
     border-bottom: solid black 2px;
-    width: 140px;
+    width: 202px;
     text-align: center;
     /* margin-left: 6%; */
 }
 
 .conatact p {
-    margin-top: 10px;
-    padding-top: 50px;
+    margin-top: 25px;
+    padding-top: 100px;
 }
 
 .contact ul {
@@ -431,3 +431,93 @@ input[type="submit"]:hover {
     left: 20%;
     background: aliceblue;
     width: 250px; */
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+
+    .about{
+        height: 800px;
+        padding-top: 15%;
+
+    }
+   
+    .ab-img img {
+        height: 14%;
+        margin: 18% 0% 0% 0%;
+
+    }
+
+    .about-1 {
+        font-size: 15px;
+        width: 49%;
+        margin-top: 10%;
+    }
+
+    .about .btn {
+        margin-top: 43px;
+        margin-left: 78%;
+        width: 143px;
+    }
+
+    .about-content {
+        padding-top: 150px;
+        height: 843px;
+    }
+
+    .about-content .col-4 {
+        height: 62%;
+        display: flex;
+        flex: 0 0 auto;
+        width: 42.333333%;
+    }
+
+    .about-content img {
+        width: 95%;
+        padding: 71px 0px 0px 0px;
+    }
+
+    .about-tex {
+        width: 57%;
+    }
+
+    .about-tex h1 {
+        width: 168px;
+        height: 46px;
+        margin-left: -96px;
+    }
+
+    .about-tex .about-tex1 {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 7px 13px 0px 0px;
+        line-height: 223%;
+    }
+    #skill-tit {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2%;
+        margin-top: 67px;
+    }
+    .skill-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;  
+        margin-top:49px ;
+    }
+
+    .card {
+        font-size :14px;
+        margin: 0px;
+        display: flex;
+        height: 500px;
+        width: 220px;
+        text-align: center;
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: flex-end;
+    }
+
+
+}
